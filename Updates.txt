@@ -1,0 +1,5 @@
+1.5 Updates
+
+[*] - Made the html file sync with updates throughout
+[*] - Fixed Retrobowl
+[*] - Fixed how it says popular links on top
