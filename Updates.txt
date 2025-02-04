@@ -1,4 +1,6 @@
 1.5 Updates
+⚠ Last 1.5 Update BTW
+⚠ If you had the version that doesn't make you copy and paste the code please delete that version. This is for updating without downloading another file and is very convenient.
 
 [*] - Added getliner AI
 [*] - Added new games
