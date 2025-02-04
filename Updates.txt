@@ -1,5 +1,12 @@
 1.5 Updates
 
-[*] - Made the html file sync with updates throughout
+[*] - Added new games
+  - Slowroads
+  - Deadshot
+  - Krunker
+  - Drift Hunters 
 [*] - Fixed Retrobowl
-[*] - Fixed how it says popular links on top
+[*] - Made the html file sync with updates throughout
+[*] - Renamed popular links to goto links
+
+If you have any recomendations please don't hesitate and email me at 425361@vbstudents.com or flowerbedjeb@gmail.com
