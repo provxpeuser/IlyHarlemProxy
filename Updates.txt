@@ -1,15 +1,10 @@
-1.5 Updates
-⚠ Last 1.5 Update BTW
-⚠ If you had the version that doesn't make you copy and paste the code please delete that version. This is for updating without downloading another file and is very convenient.
+1.6 Updates
 
-[*] - Added getliner AI
-[*] - Added new games
-  - Slowroads
-  - Deadshot
-  - Krunker
-  - Drift Hunters 
-[*] - Fixed Retrobowl
-[*] - Made the html file sync with updates throughout
-[*] - Renamed popular links to goto links
+⚠ - This is the last update until HarlemMyKingV2 Comes out 
+
+[*] - Added Subway surfers old poki version "v.1.0.0"
+[*] - Removed Glitched Links "Will add back when the IlyHarlemProxyV2 Comes out
+  - We only kept deadshot
+
 
 If you have any recomendations please don't hesitate and email me at 425361@vbstudents.com or flowerbedjeb@gmail.com
