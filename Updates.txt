@@ -1,10 +1,14 @@
-1.6 Updates
-
-⚠ - This is the last update until HarlemMyKingV2 Comes out 
-
-[*] - Added Subway surfers old poki version "v.1.0.0"
-[*] - Removed Glitched Links "Will add back when the IlyHarlemProxyV2 Comes out
-  - We only kept deadshot
+Harlem My King Rewrite Update Logs
+Version 2.0.0
 
 
-If you have any recomendations please don't hesitate and email me at 425361@vbstudents.com or flowerbedjeb@gmail.com
+Proxy Loader
+[*] - Added more options
+
+-------------------------------------------------------------------------------------------------
+Proxy
+[*] - Added an update button that shows the updates
+[*] - Made the buttons a gradient color
+[*] The version shows up on the top right
+[*] - Added a panic feature
+ - To use the panic feature press the panic button or press control + z
