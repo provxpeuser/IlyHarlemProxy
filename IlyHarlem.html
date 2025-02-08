@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +6,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>  My Apps </title>
+    <button class="error-button">Version 2.0.0</button>
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.ctrlKey && event.key === "z") {
+                window.location.href = "https://drive.google.com"; // Redirect to Google Drive
+            }
+        });
+    </script>
+</head>
+<body>
     <style>
+
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #FF6961;
+            background-image: url('https://img.goodfon.com/original/6000x4080/b/6a/3d-rendering-background-design-abstract-geometry-geometric-s.jpg');
+            background-size: cover; /* Makes the image cover the entire screen */
+            background-position: center; /* Centers the image */
+            background-repeat: repeat; /* Prevents tiling */
+            height: 100vh; /* Ensures full viewport height */
+            margin: 0;
             color: white;
             margin: 0;
             padding: 0;
@@ -38,19 +55,162 @@
         }
 
         #settingsMenu {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #1e1e1e;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-            width: 300px;
-            text-align: left;
-            z-index: 2; /* Ensures settings menu is above everything */
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #da6d6d;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    text-align: left;
+    z-index: 1000; /* Higher z-index for better visibility */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+#settingsMenu h2 {
+    margin: 0 0 15px;
+    font-size: 20px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+#settingsMenu label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+#settingsMenu input, #settingsMenu select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+}
+
+#settingsMenu button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#settingsMenu button:hover {
+    background-color: #0056b3;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Overlay for better visibility */
+#settingsOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+        .time-container {
+            background-color: #d32f2f; /* Red background */
+            color: white; /* White text */
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            width: fit-content;
+            display: flex;
+            justify-content: center;
         }
+
+
+        .error-button {
+            background-color: #E53935; /* Red background */
+            color: white; /* White text */
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            padding: 7px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 130px;
+            text-align: center;
+            display: block;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        
+        .url-button {
+            background: linear-gradient(to right, #e67b7b, #b73636); /* Purple to blue gradient */
+            color: white; /* White text */
+            font-size: 14px;
+            font-weight: 570;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 25px; /* Rounded corners */
+            cursor: pointer;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease-in-out;
+        }
+
+        .url-panic {
+            background: linear-gradient(to right, #e67b7b, #b73636); /* Purple to blue gradient */
+            color: white; /* White text */
+            font-size: 14px;
+            font-weight: 570;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 25px; /* Rounded corners */
+            cursor: pointer;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease-in-out;
+        }
+
+        .gradient-button:hover {
+            opacity: 0.9; /* Slight fade on hover */
+        }
+
+        .gradient-button span {
+            font-size: 18px;
+        }
+
 
         .toggle-button {
             background-color: #3498db;
@@ -92,28 +252,6 @@
             }
         }
 
-        .url-button {
-            background-color: #db9e9e;
-            color: white;
-            padding: 10px 25px;
-            border: White;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin: 5px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .url-button:hover {
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5), 0 10px 15px rgba(255, 255, 255, 0.7);
-            transform: translateY(-2px);
-        }
-
-        .url-button:active {
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.2);
-            transform: translateY(2px);
-        }
-
         .blocked {
             background-color: rgba(0,0,0,0.5);
             color: rgb(0, 0, 0);
@@ -125,7 +263,7 @@
             margin: 100000px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
+        
         .separator {
             border-top: 2px solid #e09090;
             margin: 20px 0;
@@ -161,21 +299,21 @@
 <canvas id="particleCanvas"></canvas>
 
 <div style="text-align: center; margin-top: 60px; position: relative; z-index: 1;">
-      <h1 class="page-title">👑Harlem My King 👑</h1>
+      <h1 class="page-title">❤👑Harlem My King 👑❤</h1>
       <h1 class="paragraph">Made by Jebunn | Still In Development!</p>
-      <h2 class="section-header">Popular Links</h2>
       <p class="paragraph"> </p>
     <input type="text" id="urlInput" style="padding: 8px 15px; border-radius: 8px; border: none; background-color: #ffffff; color: rgb(0, 0, 0); width: 90%; box-shadow: inset 0 3px 6px rgba(255, 255, 255, 0.3);" placeholder="Enter a URL or search term">
     <button id="openNewTabButton" style="background-color: #d18282; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 -2px 0 rgba(0, 0, 0, 0.2);">Open</button>
     <button id="settingsButton" style="font-size: 1.5em; background-color: transparent; border: none; border-radius: 50%; cursor: pointer; color: white; padding: 8px; margin-left: 8px; transition: all 0.3s ease; transform: translateY(4px); box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);">⚙️</button>
 
     <h5 class="paragraph">*Info and Debugging at the bottom*</h5>
-    <h5 class="paragraph">This website is private and if this site has been leaked it will be blocked and currently this website is only given to only 3 people including me.</h5>
+    <h5 class="paragraph">This website is private and if this site has been leaked it will be blocked and currently this website is only given to only 4 people including me.</h5>
+    <h5 class="paragraph">Link has been given to Harlem, Aj, Jayden and Michael</h5>
 </div>
 
 <div id="settingsMenu">
-    <span id="closeMenu" style="float: right; cursor: pointer; color: #aaa;">❌</span>
-    <h3 style="color: #fff; border-bottom: 1px solid #555; padding-bottom: 10px; margin-bottom: 15px;">Settings</h3>
+    <span id="closeMenu" style="float: right; cursor: pointer; color: #f8a3a3;">❌</span>
+    <h3 style="color: #ffffff; border-bottom: 1px solid #ce7575; padding-bottom: 10px; margin-bottom: 15px;">Settings</h3>
     <label style="color: #bbb; margin-bottom: 5px; display: block;">Default Browsers:</label>
     <div style="margin-bottom: 15px;">
         <button id="googleButton" class="toggle-button active">Google</button>
@@ -183,10 +321,10 @@
     </div>
 
     <label style="color: #bbb; margin-bottom: 5px; display: block;">Tab Title:</label>
-    <input type="text" id="titleInput" style="width: 100%; padding: 8px; border-radius: 8px; border: none; background-color: #333; color: white; box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.3); margin-bottom: 10px;">
+    <input type="text" id="titleInput" style="width: 100%; padding: 8px; border-radius: 8px; border: none; background-color: #f8abab; color: white; box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.3); margin-bottom: 10px;">
 
     <label style="color: #bbb; margin-bottom: 5px; display: block;">Favicon URL:</label>
-    <input type="text" id="faviconInput" style="width: 100%; padding: 8px; border-radius: 8px; border: none; background-color: #333; color: white; box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.3); margin-bottom: 15px;">
+    <input type="text" id="faviconInput" style="width: 100%; padding: 8px; border-radius: 8px; border: none; background-color: #f8abab; color: white; box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.3); margin-bottom: 15px;">
 
     <div style="margin-bottom: 15px;">
         <label style="color: #bbb;">Particles:</label>
@@ -204,6 +342,9 @@
     <button class="url-button" data-url="https://google.com" onclick="openURLFromButton(this)">Google</button>
     <button class="url-button" data-url="https://onecompiler.com/embed/html" onclick="openURLFromButton(this)">HTML Compiler</button>
     <button class="url-button" data-url="https://www.desmos.com/testing/virginia/scientific" onclick="openURLFromButton(this)">Desmos Scientific Calculator</button>
+    <button class = "url-button" onclick="window.open('https:raw.githubusercontent.com/provxpeuser/IlyHarlemProxy/refs/heads/main/Updates.txt', '_blank')">Updates</button>
+    <button class="url-panic">Panic</button>
+
 
 </div>
 
@@ -212,12 +353,16 @@
     <h5 class="paragraph">An Great Asortment of games that are fun when needed to waste time.</p>
     <div class="separator"></div>
     <button class="url-button" data-url="https://slope-c.glitch.me/" onclick="openURLFromButton(this)">Slope</button>
+    <button class="url-button" data-url="https://deadshot.io" onclick="openURLFromButton(this)">Deadshot</button>
+    <button class="url-button" data-url="https://slope-c.glitch.me/" onclick="openURLFromButton(this)">Slope</button>
     <button class="url-button" data-url="https://softbodytetris.netlify.app" onclick="openURLFromButton(this)">Sofybody Tetris</button>
+    <button class="url-button" data-url="https://szhong.4399.com/4399swf//upload_swf/ftp35/liuxinyu/20210324/jj01/index.html" onclick="openURLFromButton(this)">Subway Surfers</button>
     <button class="url-button" data-url="https://www.hoodamath.com/mobile/games/drift-boss/game.html" onclick="openURLFromButton(this)">Drift Boss</button>
     <button class="url-button" data-url="https://games.cdn.famobi.com/html5games/c/cut-the-rope/v070/?fg_domain=play.famobi.com&fg_aid=A-SILVERGAMES&fg_uid=4531b37c-a8e0-4a67-9ebd-e8d3190b6277&fg_pid=8a24e5f2-94a8-4593-b4e5-81cc68f524c8&fg_beat=969&original_ref=https%3A%2F%2Fwww.silvergames.com%2F" onclick="openURLFromButton(this)">Cut The Rope</button>
     <button class="url-button" data-url="https://www.2048.org/" onclick="openURLFromButton(this)">2048</button>
     <button class="url-button" data-url="https://paper-io.com/" onclick="openURLFromButton(this)">Paper.io </button>
     <button class="url-button" data-url="https://bab.dev/flappy-bird" onclick="openURLFromButton(this)">Flappy Bird</button>
+    <button class="url-button" data-url="https://1kh0.github.io/projects/retro-bowl/index.html" onclick="openURLFromButton(this)">Retro Bowl</button>
     <button class="url-button" data-url="https://bab.dev/blockblast" onclick="openURLFromButton(this)">Block Blast</button>
     <button class="url-button" data-url="https://bab.dev" onclick="openURLFromButton(this)">Bab.Dev</button>
     </Div>
@@ -243,6 +388,8 @@
     <h2 class="section-header">Information</h2>
     <div class="separator"></div>
     <p class="paragraph">Made by Jebunn "vscode" Salem Middle School </p>
+    <p class="paragraph">Press Cntl and z or press the panic button at goto links to panic</p>
+    <p class="paragraph">The panic button hides your screen and brings it to google drive</p>
     <p class="paragraph">Always include "https://" at the beginning of your URL unless you are searching the web</p>
     <p class="paragraph">When using the searchbar, some sites may not work due to CORS policy</p>
     <p class="paragraph">The "Goguardian/Securly Blockers" Links are broken, to fix this use a cloaker in the settings</p>
@@ -269,37 +416,45 @@ function openURLFromButton(button) {
 }
 
 function loadWebsiteInNewTab(url) {
-    const title = document.getElementById("titleInput").value || 'Home - Google Drive';
-    const favicon = document.getElementById("faviconInput").value || 'https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png'
-    var newTab = window.open();
-    newTab.document.write(`
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>${title}</title>
-            <link rel="icon" type="image/png" href="${favicon}" sizes="16x16">
-            <style>
-                body {
-                    margin: 0;
-                    overflow: hidden;
-                }
-                embed {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    border: none;
-                }
-            </style>
-        </head>
-        <body>
-            <embed src="${url}">
-        </body>
-        </html>
-    `);
-    newTab.document.close();
+   const title = document.getElementById("titleInput").value || 'Home - Google Drive';
+   const favicon = document.getElementById("faviconInput").value || 'https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png';
+   var newTab = window.open();
+
+   newTab.document.write(`
+       <!DOCTYPE html>
+       <html>
+       <head>
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <link rel="image" href="${favicon}" type="x-icon" />
+           <meta charset="UTF-8">
+           <title>${title}</title>
+
+           <style>
+               body {
+                   margin: 0;
+                   overflow: hidden;
+               }
+               embed {
+                   position: absolute;
+                   top: 0;
+                   left: 0;
+                   width: 100%;
+                   height: 100%;
+                   border: none;
+               }
+           </style>
+       </head>
+       <body>
+           <embed id="embeddedPage" src="${url}">
+
+       </body>
+       </html>
+   `);
+
+   newTab.document.close();
 }
+
+
 
 document.getElementById("openNewTabButton").addEventListener("click", function() {
     let input = document.getElementById("urlInput").value.trim();
@@ -332,8 +487,12 @@ document.getElementById("closeMenu").addEventListener("click", function() {
     document.getElementById("settingsMenu").style.display = "none";
 });
 
+document.querySelector(".url-panic").addEventListener("click", function() {
+            window.location.href = "https://drive.google.com"; // Redirect to Google Drive
+        });
+
 document.getElementById("resetButton").addEventListener("click", function() {
-    document.getElementById("titleInput").value = 'Inbox (1)';
+    document.getElementById("titleInput").value = 'Home - Google Drive';
     document.getElementById("faviconInput").value = 'https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png';
 });
 
@@ -433,7 +592,6 @@ window.addEventListener("scroll", () => {
 startParticles();
 </script>
 
+
 </body>
 </html>
-
-
