@@ -1,14 +1,18 @@
-Harlem My King Rewrite Update Logs
+Harlem My King Update Logs
 Version 2.0.0
+Bug Fixes, More Features and More Games
+⚠ We cannot find a way to update the google drive file, so please download the proxy and delete the old file
 
+Bug Fixes
+[*] - Fixed lag drops while playing subway surfers
+[*] - Updates could not be fixed so I removed the download file feature on the login page
+---------------------------------------------------------------------------------------------------------------------
+More Features
+[*] Made it show the time on the menu
+[*] - Added a mod menu that opens up when you press right shift (the shift button on the right)
+ - Added Ui box that shows the time, Fps Counter and Ping Counter
+---------------------------------------------------------------------------------------------------------------------
+More Games
+[*] - Added 1v1.lol
 
-Proxy Loader
-[*] - Added more options
-
--------------------------------------------------------------------------------------------------
-Proxy
-[*] - Added an update button that shows the updates
-[*] - Made the buttons a gradient color
-[*] The version shows up on the top right
-[*] - Added a panic feature
- - To use the panic feature press the panic button or press control + z
+If you have any suggestions please don't hesitate to email me at FlowerBedJeb@gmail.com
