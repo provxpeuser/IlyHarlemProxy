@@ -1,4 +1,31 @@
 Harlem My King Update Logs
+Version 2.1.5 - New Games
+
+[*] - Added a new section for io games
+ - Hole.io
+ - Kour.io
+ - Slither.io
+ - Snowball.io
+ - Paper.io
+[*] Added a new section for OvO
+ - Ovo Classic
+ - Ovo Classic Double Jump
+
+If you have any suggestions don't hesitate to email me at flowerbedjeb@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
 Version 2.1.0
 Bug Fixes, More Features and More Games
 ⚠ We cannot find a way to update the google drive file, so please download the proxy and delete the old file
