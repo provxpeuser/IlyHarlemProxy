@@ -1,45 +1,10 @@
-Harlem My King Update Logs
-Version 2.1.5 - New Games
+Retiring Blob Files + New Games 🥳
+Version 2.5.0
+[*] - Retired Blob Files and made a new file system that is more supportive of websites and is more easier to use
+[*] - Added More Games 
+ - Super Mario 64
+ - Ball Dodge
+ - Vex 7
+[*] - Added back support for Slowroads 
 
-[*] - Added a new section for io games
- - Hole.io
- - Kour.io
- - Slither.io
- - Snowball.io
- - Paper.io
-[*] Added a new section for OvO
- - Ovo Classic
- - Ovo Classic Double Jump
-
-If you have any suggestions don't hesitate to email me at flowerbedjeb@gmail.com
-
-
-
-
-
-
-
-
-
-
-
-
-
----------------------------------------------------------------------------------------------------------------------
-Version 2.1.0
-Bug Fixes, More Features and More Games
-⚠ We cannot find a way to update the google drive file, so please download the proxy and delete the old file
-
-Bug Fixes
-[*] - Fixed lag drops while playing subway surfers
-[*] - Updates could not be fixed so I removed the download file feature on the login page
----------------------------------------------------------------------------------------------------------------------
-More Features
-[*] Made it show the time on the menu
-[*] - Added a mod menu that opens up when you press right shift (the shift button on the right)
- - Added Ui box that shows the time, Fps Counter and Ping Counter
----------------------------------------------------------------------------------------------------------------------
-More Games
-[*] - Added 1v1.lol
-
-If you have any suggestions please don't hesitate to email me at FlowerBedJeb@gmail.com
+If you have any suggestions please don't hesitate to email me at flowerbedjeb@gmail.com
