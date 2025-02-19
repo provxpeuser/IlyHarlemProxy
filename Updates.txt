@@ -1,3 +1,16 @@
+New Games + New Announcement System
+
+[*] - Added 2 announcement system styles
+ - Evade Roblox Style (Or Garys Mod)
+ - Added Old Roblox announcement style
+
+[*] New Games
+ - Mine Shooter
+ - Google Snake
+--------------------------------------------------------------------------------------------------------------------
+
+
+
 Retiring Blob Files + New Games 🥳
 Version 2.5.0
 [*] - Retired Blob Files and made a new file system that is more supportive of websites and is more easier to use
