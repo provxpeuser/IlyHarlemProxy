@@ -1,23 +1,9 @@
-New Games + New Announcement System
+Last Update Before Next Big Update - 2.5.7
 
-[*] - Added 2 announcement system styles
- - Evade Roblox Style (Or Garys Mod)
- - Added Old Roblox announcement style
+[*] - Fixed Favicon not showing up just fullscreen and unfullscreen
 
-[*] New Games
- - Mine Shooter
- - Google Snake
---------------------------------------------------------------------------------------------------------------------
+[*] - Added buttons that turn blue when the website doesn't work when securly is on.
 
+[*] - Added Eruda Inspect Element Devtools 
 
-
-Retiring Blob Files + New Games 🥳
-Version 2.5.0
-[*] - Retired Blob Files and made a new file system that is more supportive of websites and is more easier to use
-[*] - Added More Games 
- - Super Mario 64
- - Ball Dodge
- - Vex 7
-[*] - Added back support for Slowroads 
-
-If you have any suggestions please don't hesitate to email me at flowerbedjeb@gmail.com
+Please give me suggestions for the next big update at FlowerBedJeb@gmail.com
